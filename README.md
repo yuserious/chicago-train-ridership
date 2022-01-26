@@ -1,2 +1,2 @@
-# cta-ridership
+# chicago-train-ridership
 Readme
