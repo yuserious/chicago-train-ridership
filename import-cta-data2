@@ -1,0 +1,12 @@
+install.packages("XML")
+# Load the package required to read XML files.
+library("XML")
+# Also load the other required package.
+library("methods")
+
+# Call the data from the CTA's API http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=f666c5d312f243be9a42630e98f8ff5e&mapid=40380
+# Give the input file name to the function.
+result <- xmlParse(file = "https://github.dev/yuserious/chicago-train-ridership/blob/470b3614545f204a86940fbe409296f20a686362/ctatt2022-01-30-1644.xml")
+
+# Print the result.
+print(result)
